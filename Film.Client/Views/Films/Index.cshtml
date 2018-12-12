@@ -1,0 +1,30 @@
+﻿@model PagedList.IPagedList<Film.Client.Models.DomainModels.FilmModel>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Catalog</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="wrapped">
+    @foreach (var item in Model)
+    {
+        <div class="container">
+        <img src="@Url.Content(@item.PosterUri)" alt=""/><br/>
+        <span> @Html.ActionLink(@item.Title, "Details", new { id = item.FilmId })</span>
+        </div>
+
+    }
+
+</div>
+<br />
+<div class="btn-group">
+    Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+ 
+    @Html.PagedListPager(Model, page => Url.Action("Index",  new { page }))
+</div>
+
+

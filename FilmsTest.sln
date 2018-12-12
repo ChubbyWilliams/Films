@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{99593C28-9DA3-46A7-B02D-E50DCCAA75B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{30BFEB1E-7D15-4887-A41F-0F58A3095A1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{68305F19-DE5E-4919-AFA3-5DFF29830BDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Film", "Film", "{1E1B89A7-FD65-4666-A454-A32E50BBF647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Film.Client", "Film.Client\Film.Client.csproj", "{21118A9D-CED4-450E-BCD7-F54F60EB84A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{EF58CC3B-BAA8-478A-B335-CD9A8A0485FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21118A9D-CED4-450E-BCD7-F54F60EB84A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21118A9D-CED4-450E-BCD7-F54F60EB84A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21118A9D-CED4-450E-BCD7-F54F60EB84A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21118A9D-CED4-450E-BCD7-F54F60EB84A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68305F19-DE5E-4919-AFA3-5DFF29830BDC} = {99593C28-9DA3-46A7-B02D-E50DCCAA75B0}
+		{1E1B89A7-FD65-4666-A454-A32E50BBF647} = {99593C28-9DA3-46A7-B02D-E50DCCAA75B0}
+		{21118A9D-CED4-450E-BCD7-F54F60EB84A2} = {1E1B89A7-FD65-4666-A454-A32E50BBF647}
+		{EF58CC3B-BAA8-478A-B335-CD9A8A0485FC} = {1E1B89A7-FD65-4666-A454-A32E50BBF647}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1340A489-12AB-4DE8-9656-52CE63D300A8}
+	EndGlobalSection
+EndGlobal
